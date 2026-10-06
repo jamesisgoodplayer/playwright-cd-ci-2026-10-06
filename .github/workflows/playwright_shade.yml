@@ -52,7 +52,7 @@ jobs:
                 path: all-blob-reports
                 pattern: blob-report-*
             - name: Merge the blob Reports
-              run: npx playwright merge-report --reporter html ./all-blob-reports
+              run: npx playwright merge-reports --reporter html ./all-blob-reports
             - name: Upload the merged HTML report
               uses: actions/upload-artifact@v4
               with:
