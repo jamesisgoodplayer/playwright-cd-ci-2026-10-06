@@ -57,5 +57,5 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                 name: html-report-attemp-${{github.run_attempt}}
-                path: playwright-reports
+                path: playwright-report
                 retention-days: 14
